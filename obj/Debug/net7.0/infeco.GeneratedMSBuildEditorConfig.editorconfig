@@ -9,77 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = infeco
 build_property.RootNamespace = infeco
-build_property.ProjectDir = /home/gfloch/Desktop/examen Studi/infeco/
+build_property.ProjectDir = C:\Users\goeffrey.floch\Documents\studi\infeco\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/gfloch/Desktop/examen Studi/infeco
+build_property.MSBuildProjectDirectory = C:\Users\goeffrey.floch\Documents\studi\infeco
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Clients/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50cy9DcmVhdGUuY3NodG1s
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Appartements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwYXJ0ZW1lbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Clients/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50cy9EZWxldGUuY3NodG1s
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Appartements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwYXJ0ZW1lbnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Clients/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50cy9EZXRhaWxzLmNzaHRtbA==
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Appartements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwYXJ0ZW1lbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Clients/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50cy9FZGl0LmNzaHRtbA==
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Appartements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwYXJ0ZW1lbnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Clients/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50cy9JbmRleC5jc2h0bWw=
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Appartements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwYXJ0ZW1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Clients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Locations/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb25zL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Clients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Locations/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb25zL0RlbGV0ZS5jc2h0bWw=
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Clients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Locations/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb25zL0RldGFpbHMuY3NodG1s
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Locations/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb25zL0VkaXQuY3NodG1s
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Factures/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Locations/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb25zL0luZGV4LmNzaHRtbA==
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Factures/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Factures/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Factures/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Factures/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gfloch/Desktop/examen Studi/infeco/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-n295269es2
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Locations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Locations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Locations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Locations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Locations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/goeffrey.floch/Documents/studi/infeco/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-48q3w2kn63

@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Infeco.Data;
+using Infeco.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<InfecoContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("InfecoContext") ?? throw new InvalidOperationException("Connection string 'InfecoContext' not found.")));

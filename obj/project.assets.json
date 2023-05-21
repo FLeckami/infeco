@@ -11012,24 +11012,34 @@
     ]
   },
   "packageFolders": {
-    "/home/gfloch/.nuget/packages/": {}
+    "C:\\Users\\goeffrey.floch\\.nuget\\packages\\": {},
+    "C:\\Users\\goeffrey.floch\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/gfloch/Desktop/examen Studi/infeco/infeco.csproj",
+      "projectUniqueName": "C:\\Users\\goeffrey.floch\\Documents\\studi\\infeco\\infeco.csproj",
       "projectName": "infeco",
-      "projectPath": "/home/gfloch/Desktop/examen Studi/infeco/infeco.csproj",
-      "packagesPath": "/home/gfloch/.nuget/packages/",
-      "outputPath": "/home/gfloch/Desktop/examen Studi/infeco/obj/",
+      "projectPath": "C:\\Users\\goeffrey.floch\\Documents\\studi\\infeco\\infeco.csproj",
+      "packagesPath": "C:\\Users\\goeffrey.floch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\goeffrey.floch\\Documents\\studi\\infeco\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Users\\goeffrey.floch\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/gfloch/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\goeffrey.floch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\goeffrey.floch\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11096,7 +11106,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/gfloch/.dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -16,6 +16,8 @@ namespace Infeco.Data
 
         public DbSet<Location> Location { get; set; }
         public DbSet<Client> Client { get; set; }
+        public DbSet<Appartement> Appartement { get; set; }
+        public DbSet<Facture> Facture { get; set; }
 
     }
 }

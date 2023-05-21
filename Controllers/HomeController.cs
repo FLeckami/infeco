@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using infeco.Models;
+using Infeco.Models;
 
-namespace infeco.Controllers;
+namespace Infeco.Controllers;
 
 public class HomeController : Controller
 {

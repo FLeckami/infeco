@@ -1,4 +1,4 @@
-namespace infeco.Models;
+namespace Infeco.Models;
 
 public class ErrorViewModel
 {

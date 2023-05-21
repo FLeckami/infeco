@@ -22,6 +22,22 @@ namespace infeco.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Infeco.Models.Appartement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Adresse")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Appartement");
+                });
+
             modelBuilder.Entity("Infeco.Models.Client", b =>
                 {
                     b.Property<int>("Id")
@@ -48,6 +64,30 @@ namespace infeco.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Client");
+                });
+
+            modelBuilder.Entity("Infeco.Models.Facture", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("ClientId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("DatePaiement")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("IdClient")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
+
+                    b.ToTable("Facture");
                 });
 
             modelBuilder.Entity("Infeco.Models.Location", b =>
@@ -81,6 +121,15 @@ namespace infeco.Migrations
                     b.HasIndex("ClientId");
 
                     b.ToTable("Location");
+                });
+
+            modelBuilder.Entity("Infeco.Models.Facture", b =>
+                {
+                    b.HasOne("Infeco.Models.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId");
+
+                    b.Navigation("Client");
                 });
 
             modelBuilder.Entity("Infeco.Models.Location", b =>
