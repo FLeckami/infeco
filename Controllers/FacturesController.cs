@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Infeco.Data;
 using Infeco.Models;
+using IronPdf;
 
 namespace Infeco.Controllers
 {
@@ -50,6 +51,36 @@ namespace Infeco.Controllers
         {
             ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom");
             return View();
+        }
+
+        public IActionResult GenererQuittance()
+        {
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> GenererQuittance([Bind("Id,IdClient")] Facture facture)
+        {
+            var contextClient = await _context.Location.Include(c => c.Client).Where(m => m.IdClient == facture.IdClient).ToListAsync();
+            var nomLocataire = contextClient[0].Client.Nom.ToUpper() + " " + contextClient[0].Client.Prenom;
+            var soldeLocataire = contextClient[0].Client.Solde;
+
+            string html = "<h1> Quittance de loyer</h1>";
+            html += "<br><br>";
+            html += $"Locataire: <nbsp>    {nomLocataire}<br>";
+            contextClient.ForEach(location =>
+            {
+                html += $"Loyer {location.Nom}: <nbsp>     {location.MontantLoyer}€<br>";
+            });
+            html += $"Solde: <nbsp>     {soldeLocataire}€<br>";
+            var somme = contextClient.Sum(l => l.MontantLoyer);
+            html += $"<b>Total à régler: <nbsp>     {somme}€</b>";
+
+            ChromePdfRenderer renderer = new ChromePdfRenderer();
+            PdfDocument pdf = renderer.RenderHtmlAsPdf(html);
+            return File(pdf.BinaryData, "application/pdf", $"quittance_loyer_{DateTime.Now:yyyyMMdd}_{nomLocataire}.pdf");
         }
 
         // POST: Factures/Create
