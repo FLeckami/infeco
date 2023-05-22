@@ -23,7 +23,7 @@ namespace infeco.Controllers
         public async Task<IActionResult> Index()
         {
               return _context.Client != null ? 
-                          View(await _context.Client.ToListAsync()) :
+                          View(await _context.Client.Where(m => m.Id != 0).ToListAsync()) :
                           Problem("Entity set 'InfecoContext.Client'  is null.");
         }
 

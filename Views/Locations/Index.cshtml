@@ -1,4 +1,4 @@
-@model IEnumerable<Infeco.Models.Location>
+﻿@model IEnumerable<Infeco.Models.Location>
 
 @{
     ViewData["Title"] = "Index";
@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.Nom)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdAppartement)
+                @Html.DisplayNameFor(model => model.Appartement)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Client)
@@ -37,7 +37,7 @@
                 @Html.DisplayFor(modelItem => item.Nom)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdAppartement)
+                @Html.DisplayFor(modelItem => item.Appartement.Nom)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Client.Nom)

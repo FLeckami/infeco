@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,9 +22,8 @@ namespace infeco.Controllers
         // GET: Locations
         public async Task<IActionResult> Index()
         {
-              return _context.Location != null ? 
-                          View(await _context.Location.Include(c => c.Client).ToListAsync()) :
-                          Problem("Entity set 'InfecoContext.Location'  is null.");
+            var infecoContext = _context.Location.Include(l => l.Appartement).Include(l => l.Client);
+            return View(await infecoContext.ToListAsync());
         }
 
         // GET: Locations/Details/5
@@ -36,6 +35,8 @@ namespace infeco.Controllers
             }
 
             var location = await _context.Location
+                .Include(l => l.Appartement)
+                .Include(l => l.Client)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (location == null)
             {
@@ -48,6 +49,8 @@ namespace infeco.Controllers
         // GET: Locations/Create
         public IActionResult Create()
         {
+            ViewData["IdAppartement"] = new SelectList(_context.Appartement, "Id", "Nom");
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom");
             return View();
         }
 
@@ -64,6 +67,8 @@ namespace infeco.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["IdAppartement"] = new SelectList(_context.Appartement, "Id", "Nom", location.IdAppartement);
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom", location.IdClient);
             return View(location);
         }
 
@@ -80,6 +85,8 @@ namespace infeco.Controllers
             {
                 return NotFound();
             }
+            ViewData["IdAppartement"] = new SelectList(_context.Appartement, "Id", "Nom", location.IdAppartement);
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom", location.IdClient);
             return View(location);
         }
 
@@ -115,6 +122,8 @@ namespace infeco.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["IdAppartement"] = new SelectList(_context.Appartement, "Id", "Nom", location.IdAppartement);
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom", location.IdClient);
             return View(location);
         }
 
@@ -127,6 +136,8 @@ namespace infeco.Controllers
             }
 
             var location = await _context.Location
+                .Include(l => l.Appartement)
+                .Include(l => l.Client)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (location == null)
             {

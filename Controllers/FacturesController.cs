@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Infeco.Data;
 using Infeco.Models;
 
-namespace infeco.Controllers
+namespace Infeco.Controllers
 {
     public class FacturesController : Controller
     {
@@ -22,9 +22,8 @@ namespace infeco.Controllers
         // GET: Factures
         public async Task<IActionResult> Index()
         {
-              return _context.Facture != null ? 
-                          View(await _context.Facture.ToListAsync()) :
-                          Problem("Entity set 'InfecoContext.Facture'  is null.");
+            var infecoContext = _context.Facture.Include(f => f.Client);
+            return View(await infecoContext.ToListAsync());
         }
 
         // GET: Factures/Details/5
@@ -36,6 +35,7 @@ namespace infeco.Controllers
             }
 
             var facture = await _context.Facture
+                .Include(f => f.Client)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (facture == null)
             {
@@ -48,6 +48,7 @@ namespace infeco.Controllers
         // GET: Factures/Create
         public IActionResult Create()
         {
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom");
             return View();
         }
 
@@ -64,6 +65,7 @@ namespace infeco.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom", facture.IdClient);
             return View(facture);
         }
 
@@ -80,6 +82,7 @@ namespace infeco.Controllers
             {
                 return NotFound();
             }
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom", facture.IdClient);
             return View(facture);
         }
 
@@ -115,6 +118,7 @@ namespace infeco.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["IdClient"] = new SelectList(_context.Client, "Id", "Nom", facture.IdClient);
             return View(facture);
         }
 
@@ -127,6 +131,7 @@ namespace infeco.Controllers
             }
 
             var facture = await _context.Facture
+                .Include(f => f.Client)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (facture == null)
             {

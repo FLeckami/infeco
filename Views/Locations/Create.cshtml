@@ -1,4 +1,4 @@
-@model Infeco.Models.Location
+﻿@model Infeco.Models.Location
 
 @{
     ViewData["Title"] = "Create";
@@ -19,13 +19,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="IdAppartement" class="control-label"></label>
-                <input asp-for="IdAppartement" class="form-control" />
-                <span asp-validation-for="IdAppartement" class="text-danger"></span>
+                <select asp-for="IdAppartement" class ="form-control" asp-items="ViewBag.IdAppartement"></select>
             </div>
             <div class="form-group">
                 <label asp-for="IdClient" class="control-label"></label>
-                <input asp-for="IdClient" class="form-control" />
-                <span asp-validation-for="IdClient" class="text-danger"></span>
+                <select asp-for="IdClient" class ="form-control" asp-items="ViewBag.IdClient"></select>
             </div>
             <div class="form-group">
                 <label asp-for="MontantLoyer" class="control-label"></label>

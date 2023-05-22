@@ -1,4 +1,4 @@
-@model Infeco.Models.Location
+﻿@model Infeco.Models.Location
 
 @{
     ViewData["Title"] = "Details";
@@ -17,16 +17,22 @@
             @Html.DisplayFor(model => model.Nom)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdAppartement)
+            @Html.DisplayNameFor(model => model.Appartement)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdAppartement)
+            @Html.DisplayFor(model => model.Appartement.Nom)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdClient)
+            @Html.DisplayNameFor(model => model.Appartement.Adresse)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdClient)
+            @Html.DisplayFor(model => model.Appartement.Adresse)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Client)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Client.Nom)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.MontantLoyer)
